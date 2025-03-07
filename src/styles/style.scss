@@ -1,6 +1,142 @@
 @import url(./reset.css);
-@import url(./variables.css);
+@import url(./fonts.css);
+
+:root {
+    --main-color: #244D4D;
+    --background-color: #FCFBFF;
+    --card-box-shadow-color: #DEE4E2;
+    --light-text-color: #919090;
+    --dark-text-color: #161616;
+    --white-text-color: #fff;
+
+    --card-width: 222px;
+    --card-height: 90px;
+}
 
 body{
-    background: red;
+    background-color: var(--background-color);
+}
+
+.button {
+    color: inherit;
+    background-color: var(--main-color);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1230px;
+    padding-inline: 15px;
+}
+
+.header{
+        max-height: 100vh;
+
+    .header__menu{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 44px;
+        align-items: center;
+
+
+        .header__logo{
+            color: var(--main-color);
+            font-family: 'SansB';
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        .menu__list{
+            display: flex;
+            gap: 80px;
+            font-family: 'SansR';
+            font-size: 16px;
+        }
+
+        .menu-buttons{
+            display: flex;
+            gap: 30px;
+
+
+        }
+    }
+}
+
+.header__hero{
+    margin-top: 27px;
+
+    .hero__inner{
+        display: flex;
+        .hero__image{
+
+        }
+
+        .hero__text{
+            font-family: 'SansR';
+            background-color: var(--main-color);
+            display: flex;
+            flex-direction: column;
+            color: var(--white-text-color);
+            padding: 101px 18px 137px 100px;
+
+            .hero__text-title{
+                font-family: 'SansB';
+                font-size: 56px;
+                line-height: 68px;
+                max-width: 671px;
+                padding-bottom: 20px;
+            }
+
+            .hero__text-paragraph{
+                max-width: 488px;
+                padding-bottom: 35px;
+                font-size: 20px;
+                line-height: 25px;
+            }
+
+            .hero__text-button{
+                background-color: var(--background-color);
+                color: var(--main-color);
+                max-width: 173px;
+                font-size: 20px;
+                line-height: 25px;
+                padding: 16px 25px;
+                
+            }
+        }
+    }
+}
+
+.company{
+    margin-top: 140px;
+
+    .company__inner{
+        display: flex;
+        flex-direction: column;
+        
+
+        .company-title {
+            margin-bottom: 40px;
+            align-self: center;
+            font-family: 'SansB';
+            font-size: 32px;
+            line-height: 42px;
+            color: var(--main-color);
+
+        }
+
+        .company__list {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 100px;
+
+            .company-item {
+
+                .company-image {
+
+                }
+            }
+        }
+    }
+
 }
