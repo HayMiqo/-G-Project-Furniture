@@ -7,6 +7,7 @@
     --card-box-shadow-color: #DEE4E2;
     --light-text-color: #919090;
     --dark-text-color: #161616;
+    --dark-gray-text-color: #383738;
     --white-text-color: #fff;
 
     --card-width: 222px;
@@ -108,7 +109,7 @@ body{
 
 .company{
     margin-top: 140px;
-
+    margin-bottom: 136px;
     .company__inner{
         display: flex;
         flex-direction: column;
@@ -138,5 +139,73 @@ body{
             }
         }
     }
+}
 
+.about{
+    margin-bottom: 131px;
+    .about__inner{
+        display: flex;
+        align-items: center;
+        gap: 100px;
+
+        .about__image{
+            -webkit-box-shadow: 10px 10px 0px 10px #DEE4E2;
+            box-shadow: 10px 10px 0px 10px #DEE4E2;
+        }
+
+        .about__text{   
+            font-family: 'SansR';
+            color: var(--dark-gray-text-color);
+            text-align: left;
+
+            .about__text-title{
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 40px;
+                margin-bottom: 20px;
+                color: var(--main-color);
+            }
+
+            .about__text-description{
+                max-width: 437px;
+                line-height: 25px;
+                font-size: 20px;
+                margin-bottom: 40px;
+            }
+
+            .text__list{
+
+
+                .list__item{
+                    display: flex;
+                    margin-bottom: 30px;
+
+                .list__item :last-child{
+                    margin-bottom: 0px;
+                }
+                    .list__item-img{
+                        align-self: flex-start;
+                        margin-right: 28px;
+                    }
+
+                    .list__item-wrapper{
+
+                        .list__item-title{
+                            font-weight: 700;
+                            margin-bottom: 14px;
+                            color: var(--main-color);
+                            line-height: 27px;
+                            font-size: 20px;
+                        }
+
+                        .list__item-description{
+                            max-width: 272px;
+                            font-size: 18px;
+                            line-height: 27px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -6,6 +6,7 @@
   --card-box-shadow-color: #DEE4E2;
   --light-text-color: #919090;
   --dark-text-color: #161616;
+  --dark-gray-text-color: #383738;
   --white-text-color: #fff;
   --card-width: 222px;
   --card-height: 90px;
@@ -90,6 +91,7 @@ body {
 
 .company {
   margin-top: 140px;
+  margin-bottom: 136px;
 }
 .company .company__inner {
   display: flex;
@@ -108,4 +110,56 @@ body {
   flex-direction: row;
   justify-content: center;
   gap: 100px;
+}
+.about {
+  margin-bottom: 131px;
+}
+.about .about__inner {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.about .about__inner .about__image {
+  box-shadow: 10px 10px 0px 10px #DEE4E2;
+}
+.about .about__inner .about__text {
+  font-family: "SansR";
+  color: var(--dark-gray-text-color);
+  text-align: left;
+}
+.about .about__inner .about__text .about__text-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  color: var(--main-color);
+}
+.about .about__inner .about__text .about__text-description {
+  max-width: 437px;
+  line-height: 25px;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.about .about__inner .about__text .text__list .list__item {
+  display: flex;
+  margin-bottom: 30px;
+}
+.about .about__inner .about__text .text__list .list__item .list__item :last-child {
+  margin-bottom: 0px;
+}
+.about .about__inner .about__text .text__list .list__item .list__item-img {
+  align-self: flex-start;
+  margin-right: 28px;
+}
+.about .about__inner .about__text .text__list .list__item .list__item-wrapper .list__item-title {
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: var(--main-color);
+  line-height: 27px;
+  font-size: 20px;
+}
+.about .about__inner .about__text .text__list .list__item .list__item-wrapper .list__item-description {
+  max-width: 272px;
+  font-size: 18px;
+  line-height: 27px;
 }/*# sourceMappingURL=style.css.map */
