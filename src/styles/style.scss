@@ -70,7 +70,7 @@ body{
 
         }
 
-        .hero__text{
+        .hero__content{
             font-family: 'SansR';
             background-color: var(--main-color);
             display: flex;
@@ -78,7 +78,7 @@ body{
             color: var(--white-text-color);
             padding: 101px 18px 137px 100px;
 
-            .hero__text-title{
+            .hero__content-title{
                 font-family: 'SansB';
                 font-size: 56px;
                 line-height: 68px;
@@ -86,14 +86,14 @@ body{
                 padding-bottom: 20px;
             }
 
-            .hero__text-paragraph{
+            .hero__content-paragraph{
                 max-width: 488px;
                 padding-bottom: 35px;
                 font-size: 20px;
                 line-height: 25px;
             }
 
-            .hero__text-button{
+            .hero__content-button{
                 background-color: var(--background-color);
                 color: var(--main-color);
                 max-width: 173px;
@@ -114,7 +114,7 @@ body{
         flex-direction: column;
         
 
-        .company-title {
+        .company__title {
             margin-bottom: 40px;
             align-self: center;
             font-family: 'SansB';
@@ -130,9 +130,9 @@ body{
             justify-content: center;
             gap: 100px;
 
-            .company-item {
+            .company__item {
 
-                .company-image {
+                .company__image {
 
                 }
             }
